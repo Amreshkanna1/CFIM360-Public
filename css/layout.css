@@ -94,10 +94,11 @@ a {
 a:active{
   color: #84D574;
 }
-
 /* ==========================================================================
    4. LAYOUT COMPONENTS
    ========================================================================== */
+
+/* Main Shell */
 .layout {
   display: grid;
   grid-template-columns: var(--left-width) minmax(0, 1fr) var(--right-width);
@@ -112,6 +113,7 @@ a:active{
   height: fit-content;
 }
 
+
 .center {
   padding: 40px;
   max-width: 800px;
@@ -119,6 +121,7 @@ a:active{
   overflow: visible;
 }
 
+/* Header & Logo */
 .site-header {
   position: fixed;
   top: 0;
@@ -133,10 +136,12 @@ a:active{
   max-width: var(--site-width);
   margin: 0 auto;
   padding: 16px 12px;
+
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; /* 🔑 left + right */
 }
+
 
 .logo a {
   font-family: var(--font-heading);
@@ -146,7 +151,6 @@ a:active{
   text-decoration: none;
   color: #000;
 }
-
 .header-meta {
   display: flex;
   flex-direction: column;
@@ -170,6 +174,8 @@ a:active{
     display: none;
   }
 }
+
+
 
 /* ==========================================================================
    5. NAVIGATION (Global & Nested)
@@ -197,6 +203,7 @@ a:active{
   text-decoration: underline;
 }
 
+/* Active States */
 .nav-global li.active > a {
   font-weight: 600;
   color: #000;
@@ -208,6 +215,7 @@ a:active{
   color: #999;
 }
 
+/* Nested Navigation */
 .nav-global li > ul,
 .nav-global details ul {
   margin-top: var(--space-xs);
@@ -221,6 +229,7 @@ a:active{
   color: #555;
 }
 
+/* Summary / Details Specifics */
 summary {
   list-style: none;
 }
@@ -262,7 +271,7 @@ details[open] .arrow {
   height: calc(100vh - var(--header-height));
   overflow-y: auto;
   overflow-x: hidden;
-  align-self: stretch;
+  align-self: stretch;   /* 🔑 NOT start */
 }
 
 .page-outline-root {
@@ -295,7 +304,7 @@ details[open] .arrow {
 }
 
 .page-outline ul ul {
-  display: none; 
+  display: none; /* Hides h3+ levels */
 }
 
 /* ==========================================================================
@@ -326,6 +335,8 @@ details[open] .arrow {
 /* ==========================================================================
    8. MEDIA QUERIES
    ========================================================================== */
+
+/* Tablets / Small Desktops */
 @media (max-width: 1024px) {
   :root{
       --header-height: 58px;
@@ -338,6 +349,7 @@ details[open] .arrow {
     display: none;
   }
 
+  /* Mobile Nav Logic */
   .mobile-nav-toggle {
     display: block;
     position: fixed;
@@ -364,7 +376,7 @@ details[open] .arrow {
   }
 
   .nav-global.open {
-    transform: translateX(0); 
+    transform: translateX(0); /* Note: Usually 'open' would be translateX(0) if it starts off-screen */
     pointer-events: auto;  
   }
 
@@ -388,6 +400,7 @@ details[open] .arrow {
   }
 }
 
+/* Mobile Devices */
 @media (max-width: 640px) {
   :root {
     --text-base: 17.5px;
@@ -420,9 +433,7 @@ details[open] .arrow {
   }
 }
 
-/* ==========================================================================
-   9. ARCHITECT PAGE
-   ========================================================================== */
+/* Architect page */
 .architect-header {
   display: grid;
   grid-template-columns: 220px 1fr;
@@ -463,6 +474,7 @@ details[open] .arrow {
   text-decoration: underline;
 }
 
+/* Mobile */
 @media (max-width: 768px) {
   .architect-header {
     grid-template-columns: 1fr;
@@ -478,14 +490,49 @@ details[open] .arrow {
   }
 }
 
-/* ==========================================================================
-   10. ARTICLES & CASE STUDIES
-   ========================================================================== */
+
+/* Dynamic grid for articles */
+
 .article-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 24px;
   margin-top: 11px;
+}
+
+.article-tile {
+  display: block;
+  padding: 15px;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  text-decoration: none;
+  background: #fff;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.article-tile:hover {
+  border-color: #999;
+  transform: translateY(-2px);
+}
+
+.article-tile h3 {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 0 0 12px;
+  /* color: #FF5349; */
+  color:#000;
+}
+
+.article-domain {
+  display: block;
+  font-size: 0.75rem;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+.article-date {
+  font-size: 0.7rem;
+  color: #999;
 }
 
 .article-tile {
@@ -496,12 +543,6 @@ details[open] .arrow {
   overflow: hidden;
   background: #fff;
   text-decoration: none;
-  transition: border-color 0.2s ease, transform 0.2s ease;
-}
-
-.article-tile:hover {
-  border-color: #999;
-  transform: translateY(-2px);
 }
 
 .article-thumb img {
@@ -519,14 +560,6 @@ details[open] .arrow {
   font-size: 0.95rem;
   margin: 0 0 8px;
   line-height: 1.4;
-  color: #000;
-}
-
-.article-domain {
-  display: block;
-  font-size: 0.75rem;
-  color: #666;
-  margin-bottom: 6px;
 }
 
 .article-date {
@@ -534,23 +567,23 @@ details[open] .arrow {
   color: #999;
 }
 
-.article-controls, .case-controls {
+/* Article controls */
+.article-controls {
   display: flex;
   gap: 15px;
   margin: 0px 0;
   align-items: center;
 }
-
-.article-controls p, .case-controls p {
+.article-controls p {
   font-size: 0.85rem;
 }
 
-.article-controls input[type="date"], .case-controls input[type="date"] {
+.article-controls input[type="date"] {
   font-size: 0.9rem;
   border: none;
 }
 
-.article-controls button, .case-controls button {
+.article-controls button {
   font-size: 0.85rem;
   background: none;
   border: 1px solid #ccc;
@@ -558,7 +591,35 @@ details[open] .arrow {
   cursor: pointer;
 }
 
-.doc-cover-image, .case-banners {
+/* case controls */
+.case-controls {
+  display: flex;
+  gap: 15px;
+  margin: 0px 0;
+  align-items: center;
+}
+.case-controls p {
+  font-size: 0.85rem;
+}
+
+.case-controls input[type="date"] {
+  font-size: 0.9rem;
+  border: none;
+}
+
+.case-controls button {
+  font-size: 0.85rem;
+  background: none;
+  border: 1px solid #ccc;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+/* =========================
+   Case Study Cover Image
+   ========================= */
+
+.doc-cover-image {
   display: block;
   max-width: 750px;
   width: 100%;
@@ -566,68 +627,453 @@ details[open] .arrow {
   margin: 0 0 2rem 0;
 }
 
+/* Mobile override */
 @media (max-width: 768px) {
-  .doc-cover-image, .case-banners {
+  .doc-cover-image {
     max-width: 100%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
 }
 
-/* ==========================================================================
-   11. DATA VISUALIZATION (NDCIL, Pipeline, Tables)
-   ========================================================================== */
+
+/* Table formatting */
+/* 1. Add Neat Spacing (Padding) */
 table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: collapse; /* Merges borders for a sleek look */
   margin: 20px 0;
   font-family: sans-serif;
 }
 
 th, td {
-  padding: 15px 20px;
+  padding: 15px 20px; /* Generous padding for "Maturity" */
   text-align: left;
   border-bottom: 1px solid #eee;
 }
 
+/* 2. Style the Header */
 th {
   background-color: #f8f9fa;
   font-weight: bold;
   color: #333;
 }
 
-tr:nth-child(even) { background-color: #f2f2f2; }
-tr:hover { background-color: #e9ecef; transition: background-color 0.2s ease; }
-
-@media screen and (max-width: 600px) {
-  table, thead, tbody, th, td, tr { display: block; }
-  thead tr { position: absolute; top: -9999px; left: -9999px; }
-  tr { margin-bottom: 15px; border: 1px solid #ccc; border-radius: 8px; overflow: hidden; }
-  td { border: none; border-bottom: 1px solid #eee; position: relative; padding-left: 0% !important; text-align: center !important; padding-top: 18px !important; }
-  td::before { position: absolute; left: 0; width: 100%; padding-right: 10px; white-space: nowrap; text-align: center; font-weight: bold; content: attr(data-label); }
+/* 3. Alternate Row Colors (Zebra Striping) */
+tr:nth-child(even) {
+  background-color: #f2f2f2; /* Light grey for every second row */
 }
 
-.pipeline-container { font-family: sans-serif; max-width: 900px; margin: 20px auto; padding: 20px; background: #fff; }
-.pipeline-flex { display: flex; align-items: center; gap: 40px; margin-top: 30px; }
-.funnel-tier { height: 40px; margin-bottom: 4px; display: flex; justify-content: center; align-items: center; font-size: 12px; font-weight: bold; color: #333; clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 10% 100%); }
-.funnel-tier-point { height: 40px; clip-path: polygon(0% 0%, 100% 0%, 50% 100%); }
+/* 4. Hover Effect (Optional but looks great) */
+tr:hover {
+  background-color: #e9ecef;
+  transition: background-color 0.2s ease;
+}
 
-.ndcil-container { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 40px 0; background: #fff; overflow: hidden; width: 30vw; }
-.ndcil-orbit-wrapper { position: relative; width: 300px; height: 300px; margin: 80px auto; border: 1px solid #ddd; border-radius: 50%; display: block; }
-.ndcil-core { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 140px; height: 140px; background: #f0f0f0; border-radius: 50%; display: flex; align-items: center; justify-content: center; z-index: 10; box-shadow: inset 0 0 20px rgba(0,0,0,0.05); }
+@media screen and (max-width: 600px) {
+  /* 1. Force the table to not behave like a table */
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
 
-/* ==========================================================================
-   12. FORMULAS & SPECIAL CLASSIFICATIONS
-   ========================================================================== */
-.ep-diagrams { display: block; max-width: 350px; width: 100%; height: auto; margin: 0 0 2rem 0; padding: 0 10rem; }
-@media (max-width: 768px) { .ep-diagrams { max-width: 100%; padding: 0; margin-left: auto; margin-right: auto; } }
+  /* 2. Hide the header row (but keep it for screen readers) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
 
-.formulas p { font-family: "Latin Modern MAth", serif; font-size: 1.3rem; font-weight: 600; text-align: center; color: #FF5349; }
-@media (max-width: 768px) { .formulas p { font-size: 1rem; } }
+  tr {
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Matches your card style */
+    overflow: hidden;
+  }
 
-sup.model { color: #FF5349; }
-sup.principles { color: #7A5CFA; }
-sup.diagnostics { color: #F4B400; }
-sup.protocol { color: #1E88E5; }
-sup.architecture { color: #2E7D32; }
-sup.signal { color: #ffa91f; }
+  td {
+    /* 3. Make each cell act like a row */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 0% !important; /* Push text to the right */
+    text-align: center !important;
+    padding-top: 18px !important;
+  }
+
+  td::before {
+    /* 4. Add the labels back manually using data attributes */
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align: center;
+    font-weight: bold;
+    content: attr(data-label); /* Pulls the header name */
+  }
+}
+
+/* Fraud pipeline container */
+.pipeline-container {
+  font-family: sans-serif;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+}
+
+.pipeline-flex {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+/* Funnel Styling */
+.funnel-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.funnel-tier {
+  height: 40px;
+  margin-bottom: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+  clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 10% 100%);
+}
+
+.funnel-tier-point {
+  height: 40px;
+  clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+}
+
+/* Steps Text Styling */
+.pipeline-steps {
+  flex: 1;
+  text-align: center;
+}
+
+.step {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.figure-caption {
+  text-align: center;
+  font-size: 13px;
+  color: #666;
+  margin-top: 20px;
+}
+
+/* --- MOBILE RESPONSIVENESS --- */
+@media screen and (max-width: 600px) {
+  .pipeline-flex {
+    flex-direction: column; /* Stacks funnel above text */
+    gap: 20px;
+  }
+  
+  .pipeline-steps {
+    text-align: center; /* Centers text for easier reading on phones */
+  }
+  
+  .funnel-tier {
+    height: 30px; /* Slimmer tiers for small screens */
+    font-size: 10px;
+    width: 50%;
+  }
+
+  /* We override the inline widths (100%, 85%, etc.) to make the funnel less 'sharp' on mobile */
+  .funnel-tier[style*="width: 100%"] { width: 80vw !important; }
+  .funnel-tier[style*="width: 85%"]  { width: 70vw !important; }
+  .funnel-tier[style*="width: 70%"]  { width: 60vw !important; }
+  .funnel-tier[style*="width: 55%"]  { width: 50vw !important; }
+  .funnel-tier[style*="width: 40%"]  { width: 40vw !important; }
+  .funnel-tier[style*="width: 25%"]  { width: 30vw !important; }
+  
+  .funnel-tier-point {
+    width: 20% !important; /* Keeps the bottom point from being too thin */
+  }
+
+  .pipeline-steps {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+
+/* =========================
+   Long Heading Safety
+   ========================= */
+
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: normal;
+  hyphens: auto;
+}
+/* NDCIL Diagram */
+/* Ensure the parent container is a flexbox to force true horizontal centering */
+.ndcil-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* This is the magic for horizontal centering */
+  text-align: center;
+  padding: 40px 0; /* Remove side padding to give orbit more room */
+  background: #fff;
+  overflow: hidden; /* Prevents labels from creating a horizontal scrollbar */
+  width: 30vw;
+}
+
+.ndcil-orbit-wrapper {
+  position: relative;
+  width: 300px; /* Slightly smaller to ensure labels fit on screen */
+  height: 300px;
+  margin: 80px auto; /* Auto margins are the 'Maturity' way to center blocks */
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  /* This ensures the coordinate system starts exactly in the middle */
+  display: block; 
+}
+
+/* The Central Core */
+.ndcil-core {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 140px;
+  height: 140px;
+  background: #f0f0f0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.05);
+}
+
+.core-text {
+  font-size: 11px;
+  line-height: 1.2;
+  padding: 10px;
+}
+
+.core-text strong { font-size: 18px; color: #333; }
+
+/* The Satellite Nodes */
+.node {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Positioning Nodes around the circle */
+.social    { top: 0%;   left: 50%; background: #ff3b30; }
+.ecommerce { top: 25%;  left: 93%; background: #34aadc; }
+.protection{ top: 75%;  left: 93%; background: #4cd964; }
+.domain    { top: 100%; left: 50%; background: #000000; }
+.payment   { top: 75%;  left: 7%;  background: #5856d6; }
+.logistics { top: 25%;  left: 7%;  background: #ff9500; }
+
+/* Labels for Nodes */
+.node::after {
+  content: attr(data-label);
+  position: absolute;
+  width: 120px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #444;
+}
+.disclaimer-box {
+  background-color: #f9f9f9;
+  border-left: 3px solid #333; /* A strong architectural line */
+  padding: 15px 20px;
+  margin: 20px 0;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #555;
+}
+/* Label Positioning */
+.social::after    { bottom: 45px; left: -40px; }
+.ecommerce::after { left: 45px; top: 10px; text-align: left;}
+.protection::after{ left: 45px; top: 10px; text-align: left;}
+.domain::after    { top: 45px; left: -40px; }
+.payment::after   { right: 45px; top: 10px; text-align: right;}
+.logistics::after { right: 45px; top: 10px; text-align: right;}
+
+/* --- MOBILE RESPONSIVE --- */
+@media screen and (max-width: 600px) {
+  .ndcil-container {
+    width: 90vw !important; /* Force it to use almost full width on mobile */
+    max-width: none;        /* Remove any restrictions */
+    padding: 20px 0;
+  }
+  .ndcil-orbit-wrapper {
+    width: 100%;
+    height: auto;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+    padding: 0 5px;
+    transform: scale(0.9);/* Slightly shrink the circle if it hits the edges */
+  }
+
+  .ndcil-core {
+    position: relative;
+    top: 0; left: 0;
+    transform: none;
+    margin-bottom: 20px;
+  }
+
+  .node {
+    position: relative;
+    top: 0 !important;
+    left: 0 !important;
+    transform: none;
+    width: 100%;
+    height: 50px;
+    border-radius: 8px; /* Changes circles to cards on mobile */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  .node::after {
+    position: static;
+    color: white;
+    width: auto;
+    text-align: center !important;
+  }
+}
+/* 2. TABLET / SMALL LAPTOP VIEW (Between 769px and 1024px) */
+/* This is where your '30vw' usually breaks because the screen is too narrow */
+@media screen and (max-width: 1024px) {
+  .ndcil-container {
+    width: 60vw !important; /* Give it double the space so labels don't clip */
+  }
+  .ndcil-orbit-wrapper {
+    transform: scale(0.9); /* Slight shrink to keep satellite nodes safe */
+  }
+}
+
+/* 3. MOBILE VIEW (768px and below) */
+@media screen and (max-width: 768px) {
+  .ndcil-container {
+    width: 95vw !important; /* Almost full width for the phone */
+    padding: 20px 0;
+  }
+  
+  /* On very small phones, we shrink the circle or stack it */
+  .ndcil-orbit-wrapper {
+    transform: scale(0.8); 
+    margin: 40px auto; 
+  }
+
+  /* Optional: If the labels still overlap on mobile, 
+     you can reduce font size here */
+  .node::after {
+    font-size: 10px !important;
+    width: 80px !important;
+  }
+}
+
+/* =========================
+   Case Study banner Images
+   ========================= */
+
+.case-banners {
+  display: block;
+  max-width: 750px;
+  width: 100%;
+  height: auto;
+  margin: 0 0 2rem 0;
+}
+
+/* Mobile override */
+@media (max-width: 768px) {
+  .case-banners {
+    max-width: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* =========================
+   EP Diagrams
+   ========================= */
+
+.ep-diagrams {
+  display: block;
+  max-width: 350px; 
+  width: 100%;
+  height: auto;
+  margin: 0 0 2rem 0;
+  padding: 0 10rem;
+}
+
+/* Mobile override */
+@media (max-width: 768px) {
+  .ep-diagrams {
+    max-width: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+      padding: 0 0rem;
+  }
+}
+
+.formulas p {
+  font-family: "Latin Modern MAth", serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+  color: #FF5349;
+}
+
+/* Mobile override */
+@media (max-width: 768px) {
+.formulas p {
+  font-size: 1rem;
+}
+}
+
+/* Frameworks classfications */
+
+sup.model {
+  color: #FF5349;
+}
+sup.principles {
+ color: #7A5CFA;
+}
+sup.diagnostics {
+  color: #F4B400;
+}
+sup.protocol {
+  color: #1E88E5;
+}
+sup.architecture {
+  color: #2E7D32;
+}
+sup.signal {
+  color: #ffa91f;
+}
