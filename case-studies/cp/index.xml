@@ -2,17 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cognitive Physics — Case Studies on CFIM360°</title>
-    <link>https://cfim360.com/case-studies/cp/</link>
+    <link>http://localhost:1313/case-studies/cp/</link>
     <description>Recent content in Cognitive Physics — Case Studies on CFIM360°</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://cfim360.com/case-studies/cp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 24 Jan 2026 00:00:00 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/case-studies/cp/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Cognitive Physics-Case Studies</title>
-      <link>https://cfim360.com/case-studies/cp/cp-cs-001/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://cfim360.com/case-studies/cp/cp-cs-001/</guid>
-      <description>&lt;h2 id=&#34;status&#34;&gt;Status&lt;/h2&gt;&#xA;&lt;p&gt;No case studies are currently recorded in this domain.&lt;/p&gt;&#xA;&lt;p&gt;This page exists to hold empirical records when real conditions produce sufficient signal.&lt;/p&gt;&#xA;&lt;p&gt;No inference should be made from the absence of entries.&lt;/p&gt;&#xA;&lt;hr&gt;</description>
+      <title>Invariant Exposure of Cognitive Control Failure</title>
+      <link>http://localhost:1313/case-studies/cp/cp-cs-001/</link>
+      <pubDate>Sat, 24 Jan 2026 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/case-studies/cp/cp-cs-001/</guid>
+      <description>&lt;div class=&#34;doc-cover&#34;&gt;&#xD;&#xA;&lt;p&gt;&lt;img&#xD;&#xA;src=&#34;http://localhost:1313/case-studies/cp/cp-covers/CS001.webp&#34;&#xD;&#xA;alt=&#34;CS001 cover image&#34;&#xD;&#xA;class=&#34;doc-cover-image&#34;&#xD;&#xA;/&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;cs001---invariant-exposure-of-cognitive-control-failure-under-algorithmic-mediation&#34;&gt;CS001 - Invariant Exposure of Cognitive Control Failure under Algorithmic Mediation&lt;/h2&gt;&#xA;&lt;p&gt;Cognitive Physics in Real Conditions&lt;/p&gt;&#xA;&lt;p&gt;Case Study · Cognitive Physics · CFIM360°&lt;/p&gt;&#xA;&lt;p&gt;This document records cognitive physics as it manifested under real-world conditions. It does not explain methods, provide instruction, or offer interpretation. All observations are preserved as recorded.&lt;/p&gt;&#xA;&lt;h2 id=&#34;executive-summary&#34;&gt;Executive Summary&lt;/h2&gt;&#xA;&lt;p&gt;This case study documents a &lt;strong&gt;recurring cognitive failure pattern that emerges when cognition is persistently mediated by external control architectures.&lt;/strong&gt; The analysis is invariant-first and substrate-agnostic, examining how identical breakdowns manifest across human and machine cognitive systems once specific regulatory conditions are met.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
