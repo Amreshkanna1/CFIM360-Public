@@ -6,8 +6,22 @@
     <description>Recent content on CFIM360°</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Jan 2026 00:00:00 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 26 Jan 2026 00:00:00 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Somatic Collapse as Downstream Execution Failure</title>
+      <link>http://localhost:1313/case-studies/sp/sp-cs-001/</link>
+      <pubDate>Mon, 26 Jan 2026 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/case-studies/sp/sp-cs-001/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>The Snap: Why Realization Arrives Suddenly After Long Periods of Misalignment</title>
+      <link>http://localhost:1313/articles/ec/series-2/ec-006/</link>
+      <pubDate>Mon, 26 Jan 2026 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/articles/ec/series-2/ec-006/</guid>
+      <description>&lt;div class=&#34;doc-cover&#34;&gt;&#xD;&#xA;&lt;img&#xD;&#xA;  src=&#34;http://localhost:1313/articles/ec/Series 2/covers/Article 6.webp&#34;&#xD;&#xA;  alt=&#34;Article 5 cover image&#34;&#xD;&#xA;  class=&#34;doc-cover-image&#34;&#xD;&#xA;/&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;h2 id=&#34;the-snap-why-realization-arrives-suddenly-after-long-periods-of-misalignment&#34;&gt;The Snap: Why Realization Arrives Suddenly After Long Periods of Misalignment&lt;/h2&gt;&#xA;&lt;p&gt;Misalignment rarely feels like misalignment while it’s happening.&#xA;The system continues moving, adjusting, and compensating — until it can’t.&lt;/p&gt;&#xA;&lt;p&gt;Then something sharp happens:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;A moment of clarity appears.&lt;/li&gt;&#xA;&lt;li&gt;A spike of awareness cuts through.&lt;/li&gt;&#xA;&lt;li&gt;A sudden recognition forms:&lt;/li&gt;&#xA;&lt;li&gt;“This isn’t working. Something shifted.”&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;It feels abrupt, but it’s not.&#xA;It’s the moment when accumulated distortion crosses the threshold the system can no longer maintain.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Linear Closure vs Recursive Coherence</title>
       <link>http://localhost:1313/case-studies/cp/cp-cs-002/</link>
@@ -441,13 +455,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/physics/somatic/</guid>
       <description>&lt;h2 id=&#34;identity&#34;&gt;Identity&lt;/h2&gt;&#xA;&lt;p&gt;Somatic Physics defines the body as a &lt;strong&gt;physical system of signals&lt;/strong&gt;, not as a biological object, health domain, or therapeutic target.&lt;/p&gt;&#xA;&lt;p&gt;It studies how internal signals originate, propagate, accumulate, and discharge within the body as &lt;strong&gt;lawful physical behavior&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;what-this-physics-addresses&#34;&gt;What This Physics Addresses&lt;/h2&gt;&#xA;&lt;p&gt;Somatic Physics focuses on:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;signal accumulation and release&lt;/li&gt;&#xA;&lt;li&gt;physical latency and load&lt;/li&gt;&#xA;&lt;li&gt;internal pressure without conscious mediation&lt;/li&gt;&#xA;&lt;li&gt;non-verbal state persistence&lt;/li&gt;&#xA;&lt;li&gt;body-level constraint before cognition or emotion intervenes&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;The body here is not symbolic.&lt;br&gt;&#xA;It is &lt;strong&gt;mechanical, temporal, and responsive&lt;/strong&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Somatic-Case Studies</title>
-      <link>http://localhost:1313/case-studies/sp/sp-cs-001/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/case-studies/sp/sp-cs-001/</guid>
-      <description>&lt;h2 id=&#34;status&#34;&gt;Status&lt;/h2&gt;&#xA;&lt;p&gt;No case studies are currently recorded in this domain.&lt;/p&gt;&#xA;&lt;p&gt;This page exists to hold empirical records when real conditions produce sufficient signal.&lt;/p&gt;&#xA;&lt;p&gt;No inference should be made from the absence of entries.&lt;/p&gt;&#xA;&lt;hr&gt;</description>
     </item>
     <item>
       <title>Stability</title>

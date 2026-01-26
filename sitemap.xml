@@ -3,18 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/articles/</loc>
-    <lastmod>2026-01-25T00:00:00+05:30</lastmod>
+    <lastmod>2026-01-26T00:00:00+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/case-studies/</loc>
-    <lastmod>2026-01-25T00:00:00+05:30</lastmod>
+    <lastmod>2026-01-26T00:00:00+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-01-25T00:00:00+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/case-studies/cp/</loc>
-    <lastmod>2026-01-25T00:00:00+05:30</lastmod>
+    <lastmod>2026-01-26T00:00:00+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/articles/ec/</loc>
+    <lastmod>2026-01-26T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/case-studies/sp/sp-cs-001/</loc>
+    <lastmod>2026-01-26T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/case-studies/sp/</loc>
+    <lastmod>2026-01-26T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/articles/ec/series-2/ec-006/</loc>
+    <lastmod>2026-01-26T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/case-studies/cp/</loc>
     <lastmod>2026-01-25T00:00:00+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/case-studies/cp/cp-cs-002/</loc>
@@ -214,10 +223,6 @@
     <loc>http://localhost:1313/cybernetics/somatic/</loc>
   </url><url>
     <loc>http://localhost:1313/physics/somatic/</loc>
-  </url><url>
-    <loc>http://localhost:1313/case-studies/sp/</loc>
-  </url><url>
-    <loc>http://localhost:1313/case-studies/sp/sp-cs-001/</loc>
   </url><url>
     <loc>http://localhost:1313/frameworks/stability/</loc>
   </url><url>
