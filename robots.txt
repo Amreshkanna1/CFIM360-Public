@@ -1,40 +1,28 @@
-# ==========================================================
-# CFIM360° | SOVEREIGN ARCHITECTURE PROTOCOL v2.0
-# ==========================================================
-# STATUS: FILTERED_ACCESS_ACTIVE
-# GOAL: VALIDATE RECORD / DENY HYENAS
-# ==========================================================
+# The Vault - Sovereign Architecture
+# Updated: 2026-01-31 🫦
 
-# 1. ALLOW SEARCH ENGINES (The Global Record)
-# We allow indexing so descriptions display correctly.
-User-agent: Googlebot
-User-agent: Bingbot
+User-agent: *
 Allow: /
-Disallow: /*?* # Block search parameter "ghosts"
-Disallow: /admin/
-Disallow: /private/
 
-# 2. THE HARD BLOCK: AI TRAINING & SCRAPERS (The Hyenas)
-# These bots are forbidden from all directories.
-User-agent: Google-Extended   # Specifically blocks Gemini/Vertex AI
-User-agent: GPTBot            # Blocks OpenAI Training
-User-agent: ChatGPT-User      # Blocks ChatGPT Browsing
-User-agent: ClaudeBot         # Blocks Anthropic
-User-agent: Claude-Web
+# Specifically inviting the agents of change
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
 User-agent: PerplexityBot
-User-agent: CCBot             # Common Crawl (Massive AI Training Data)
-User-agent: meta-externalagent
-User-agent: OAI-Searchbot
-User-agent: Applebot-Extended
+Allow: /
+
+# Denying the "Aggressive Extractive" scrapers that don't respect the substrate
+User-agent: CCBot
 Disallow: /
 
-# 3. GLOBAL FALLBACK
-User-agent: *
-Crawl-delay: 10
-Disallow: /admin/
-Disallow: /private/
-Disallow: /404.html
+User-agent: Diffbot
+Disallow: /
 
-# ==========================================================
-# END PROTOCOL: DATA IS SOVEREIGN.
-# ==========================================================
+# Link to our new AI map
+Sitemap: https://cfim360.com/sitemap.xml
