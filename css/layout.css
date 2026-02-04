@@ -34,7 +34,6 @@
   font-display: swap;
 }
 
-montserrat-v31-latin-700
 
 /* ==========================================================================
    2. BASE STYLES
@@ -234,6 +233,7 @@ a:active{
   padding: 0;
   margin: 0;
 }
+
 .nav-global ul li {
   padding-top: 5px;
 }
@@ -332,7 +332,6 @@ details[open] .arrow {
   list-style: none;
   padding: 0;
   margin: 0;
-    scrollbar-color: orange;
   scrollbar-width: thin;
 }
 
@@ -421,6 +420,14 @@ details[open] .arrow {
     z-index: 1200;
   }
 
+/* Restoring Coherence to the Sub-menu */
+.nav-menu ul li ul li {
+    font-size: 1rem !important; /* Adjust this to match the 'Physics' font size exactly */
+    line-height: 1.5;
+    font-weight: 400; /* Keeps it clean and non-aggressive */
+    padding-left: 20px; /* Maintains the structural indentation */
+    -webkit-text-size-adjust: 100%; /* Prevents mobile browsers from auto-inflating the font */
+}  
   .nav-global.open {
     transform: translateX(0); /* Note: Usually 'open' would be translateX(0) if it starts off-screen */
     pointer-events: auto;  
