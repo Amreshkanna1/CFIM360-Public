@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status: Out of Office</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #0a0a0a;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        /* The Background Blur (FH4 Vibes) */
+        .bg-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url('forza.jpg'); /* REPLACE WITH YOUR IMAGE */
+            background-size: cover;
+            background-position: center;
+            filter: blur(8px);
+            z-index: -1;
+            transform: scale(1.1);
+        }
+
+        .container {
+            text-align: center;
+            max-width: 600px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        .forza-shot {
+            width: 100%;
+            height: 250px;
+            background-color: #1a1a1a;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px dashed #444;
+            overflow: hidden;
+        }
+
+        .forza-shot img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 6px 15px;
+            background: #ffcc00;
+            color: #000;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .status-footer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #666;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-image"></div>
+
+    <div class="container">
+        <div class="badge">Sovereign Break</div>
+        
+        <div class="forza-shot">
+            <img src="forza.jpg" alt="Drifting in Britain">
+        </div>
+
+        <h1>Taking a break to live a little.</h1>
+        
+        <p>
+            We’ve decided to step away for a bit. 🫦 
+        </p>
+        <p>
+            Let's be honest: nobody actually likes real physics for emotions anyway—it's too much work for a world that prefers noise. We figured it's a much better use of our time to go play some <strong>Forza Horizon 4</strong> and enjoy the British lakeside vibes.
+        </p>
+
+        <div class="status-footer">
+            Current Task: Relieving ourselves from the boredom of "important" work.
+        </div>
+    </div>
+
+</body>
+</html>
