@@ -177,7 +177,6 @@ a:active{
   max-width: var(--site-width);
   margin: 0 auto;
   padding: 16px 12px;
-
   display: flex;
   align-items: center;
   justify-content: space-between; /* 🔑 left + right */
@@ -248,9 +247,14 @@ a:active{
 }
 
 /* Active States */
-.nav-global li.active > a {
+.nav-global ul.active > a {
   font-weight: 600;
-  color: #000;
+  color: #FF5349;
+}
+
+.nav-global ul li.active > a {
+  font-weight: 600;
+  color: #FF5349;
 }
 
 .nav-global li.active::before {
@@ -425,7 +429,7 @@ details[open] .arrow {
     font-size: 1rem !important; /* Adjust this to match the 'Physics' font size exactly */
     line-height: 1.5;
     font-weight: 400; /* Keeps it clean and non-aggressive */
-    padding-left: 20px; /* Maintains the structural indentation */
+    padding-left: 10px; /* Maintains the structural indentation */
     -webkit-text-size-adjust: 100%; /* Prevents mobile browsers from auto-inflating the font */
 }  
   .nav-global.open {
@@ -434,19 +438,21 @@ details[open] .arrow {
   }
 
   .nav-global ul {
-    min-width: 200px;
+    min-width: 250px;
      padding: 0 26px;
-   margin-left: -100vw;
+   margin-left: -90vw;
   }
 
   .nav-global ul ul {
     margin: 0px 0 0 0;
     padding-left: 12px;
-    padding-top: 10px;
+    padding-top: 2px;
+    overflow-y: auto;
+  overflow-x: hidden;
   }
   .nav-global ul li {
     margin-left: 0;
-    padding-top: 10px;
+    padding-top: 5px;
   }
 
   .nav-global summary {
