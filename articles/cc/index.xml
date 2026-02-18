@@ -1,4 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cognitive Cybernetics on CFIM360°</title><link>https://cfim360.com/articles/cc/</link><description>Recent content in Cognitive Cybernetics on CFIM360°</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 17 Feb 2026 00:00:00 +0530</lastBuildDate><atom:link href="https://cfim360.com/articles/cc/index.xml" rel="self" type="application/rss+xml"/><item><title>Recursive Stability and Loop Persistence</title><link>https://cfim360.com/articles/cc/series-1/cc-008/</link><pubDate>Tue, 17 Feb 2026 00:00:00 +0530</pubDate><guid>https://cfim360.com/articles/cc/series-1/cc-008/</guid><description>&lt;div class="doc-cover"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cognitive Cybernetics on CFIM360°</title><link>https://cfim360.com/articles/cc/</link><description>Recent content in Cognitive Cybernetics on CFIM360°</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 18 Feb 2026 00:00:00 +0530</lastBuildDate><atom:link href="https://cfim360.com/articles/cc/index.xml" rel="self" type="application/rss+xml"/><item><title>Closure as a Control Function</title><link>https://cfim360.com/articles/cc/series-1/cc-009/</link><pubDate>Wed, 18 Feb 2026 00:00:00 +0530</pubDate><guid>https://cfim360.com/articles/cc/series-1/cc-009/</guid><description>&lt;div class="doc-cover"&gt;
+&lt;img
+ src="https://cfim360.com/articles/cc/Series 1/covers/Article 9.webp"
+ alt="Article 9 cover image"
+ class="doc-cover-image"
+/&gt;
+&lt;/div&gt;
+&lt;h2 id="closure-as-a-control-function"&gt;Closure as a Control Function&lt;/h2&gt;
+&lt;h2 id="1-why-closure-is-central"&gt;1. Why Closure Is Central&lt;/h2&gt;
+&lt;p&gt;Cognitive systems do not fail because they stop.
+They fail because &lt;strong&gt;how and when they stop&lt;/strong&gt; is regulated.&lt;/p&gt;
+&lt;p&gt;Closure is not an outcome of reasoning.
+It is a &lt;strong&gt;control function&lt;/strong&gt; that determines when inference is considered complete.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="2-what-closure-is-structurally"&gt;2. What Closure Is (Structurally)&lt;/h2&gt;
+&lt;p&gt;Closure is the regulatory condition under which:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;further inference is suppressed&lt;/li&gt;
+&lt;li&gt;evaluation is finalized&lt;/li&gt;
+&lt;li&gt;a state is accepted as sufficient&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Closure does not require certainty, correctness, or completeness.
+It requires satisfaction of termination criteria.&lt;/p&gt;</description></item><item><title>Recursive Stability and Loop Persistence</title><link>https://cfim360.com/articles/cc/series-1/cc-008/</link><pubDate>Tue, 17 Feb 2026 00:00:00 +0530</pubDate><guid>https://cfim360.com/articles/cc/series-1/cc-008/</guid><description>&lt;div class="doc-cover"&gt;
 &lt;img
  src="https://cfim360.com/articles/cc/Series 1/covers/Article 8.webp"
  alt="Article 8 cover image"
