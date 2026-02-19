@@ -1,4 +1,50 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CFIM360°</title><link>https://cfim360.com/</link><description>Recent content on CFIM360°</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 18 Feb 2026 00:00:00 +0530</lastBuildDate><atom:link href="https://cfim360.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Closure as a Control Function</title><link>https://cfim360.com/articles/cc/series-1/cc-009/</link><pubDate>Wed, 18 Feb 2026 00:00:00 +0530</pubDate><guid>https://cfim360.com/articles/cc/series-1/cc-009/</guid><description>&lt;div class="doc-cover"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CFIM360°</title><link>https://cfim360.com/</link><description>Recent content on CFIM360°</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 19 Feb 2026 00:00:00 +0530</lastBuildDate><atom:link href="https://cfim360.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Early Termination in Cognitive Systems</title><link>https://cfim360.com/articles/cc/series-1/cc-010/</link><pubDate>Thu, 19 Feb 2026 00:00:00 +0530</pubDate><guid>https://cfim360.com/articles/cc/series-1/cc-010/</guid><description>&lt;div class="doc-cover"&gt;
+&lt;img
+ src="https://cfim360.com/articles/cc/Series 1/covers/Article 10.webp"
+ alt="Article 10 cover image"
+ class="doc-cover-image"
+/&gt;
+&lt;/div&gt;
+&lt;h2 id="early-termination-in-cognitive-systems"&gt;Early Termination in Cognitive Systems&lt;/h2&gt;
+&lt;h2 id="1-termination-is-not-failure"&gt;1. Termination Is Not Failure&lt;/h2&gt;
+&lt;p&gt;Termination is a necessary function of cognition.
+Early termination, however, is a &lt;strong&gt;regulatory pattern,&lt;/strong&gt; not an error signal.&lt;/p&gt;
+&lt;p&gt;Cognitive systems frequently terminate inference before exploration is complete, not because reasoning failed, but because control conditions were met.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="2-what-early-termination-is"&gt;2. What Early Termination Is&lt;/h2&gt;
+&lt;p&gt;Early termination occurs when:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;inference stops before alternative paths are explored&lt;/li&gt;
+&lt;li&gt;evaluation concludes with partial signal integration&lt;/li&gt;
+&lt;li&gt;closure thresholds are met prematurely&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The system does not detect this as premature.
+From the control layer’s perspective, termination is correct.&lt;/p&gt;</description></item><item><title>Long-Horizon Coherence: How Systems Maintain Stability and Direction Across Extended Timescales</title><link>https://cfim360.com/articles/ec/series-2/ec-030/</link><pubDate>Thu, 19 Feb 2026 00:00:00 +0530</pubDate><guid>https://cfim360.com/articles/ec/series-2/ec-030/</guid><description>&lt;div class="doc-cover"&gt;
+&lt;img
+ src="https://cfim360.com/articles/ec/Series 2/covers/Article 30.webp"
+ alt="Article 30 cover image"
+ class="doc-cover-image"
+/&gt;
+&lt;/div&gt;
+&lt;h2 id="long-horizon-coherence-how-systems-maintain-stability-and-direction-across-extended-timescales"&gt;Long-Horizon Coherence: How Systems Maintain Stability and Direction Across Extended Timescales&lt;/h2&gt;
+&lt;p&gt;Once a system stabilizes multiple environments and forms a structural ecosystem,
+it faces a new challenge:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Can it stay coherent over long periods of time—&lt;/strong&gt;
+&lt;strong&gt;months, years, cycles, and transitions?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Short-term coherence relies on:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;stable emotions&lt;/li&gt;
+&lt;li&gt;clear direction&lt;/li&gt;
+&lt;li&gt;healthy boundaries&lt;/li&gt;
+&lt;li&gt;manageable load&lt;/li&gt;
+&lt;li&gt;aligned environments&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Long-horizon coherence requires deeper architecture:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;the ability to maintain structural integrity through changing seasons, shifting conditions, evolving contexts, and prolonged motion.&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Closure as a Control Function</title><link>https://cfim360.com/articles/cc/series-1/cc-009/</link><pubDate>Wed, 18 Feb 2026 00:00:00 +0530</pubDate><guid>https://cfim360.com/articles/cc/series-1/cc-009/</guid><description>&lt;div class="doc-cover"&gt;
 &lt;img
  src="https://cfim360.com/articles/cc/Series 1/covers/Article 9.webp"
  alt="Article 9 cover image"

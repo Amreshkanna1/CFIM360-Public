@@ -1,4 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cognitive Cybernetics on CFIM360°</title><link>https://cfim360.com/articles/cc/</link><description>Recent content in Cognitive Cybernetics on CFIM360°</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 18 Feb 2026 00:00:00 +0530</lastBuildDate><atom:link href="https://cfim360.com/articles/cc/index.xml" rel="self" type="application/rss+xml"/><item><title>Closure as a Control Function</title><link>https://cfim360.com/articles/cc/series-1/cc-009/</link><pubDate>Wed, 18 Feb 2026 00:00:00 +0530</pubDate><guid>https://cfim360.com/articles/cc/series-1/cc-009/</guid><description>&lt;div class="doc-cover"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cognitive Cybernetics on CFIM360°</title><link>https://cfim360.com/articles/cc/</link><description>Recent content in Cognitive Cybernetics on CFIM360°</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 19 Feb 2026 00:00:00 +0530</lastBuildDate><atom:link href="https://cfim360.com/articles/cc/index.xml" rel="self" type="application/rss+xml"/><item><title>Early Termination in Cognitive Systems</title><link>https://cfim360.com/articles/cc/series-1/cc-010/</link><pubDate>Thu, 19 Feb 2026 00:00:00 +0530</pubDate><guid>https://cfim360.com/articles/cc/series-1/cc-010/</guid><description>&lt;div class="doc-cover"&gt;
+&lt;img
+ src="https://cfim360.com/articles/cc/Series 1/covers/Article 10.webp"
+ alt="Article 10 cover image"
+ class="doc-cover-image"
+/&gt;
+&lt;/div&gt;
+&lt;h2 id="early-termination-in-cognitive-systems"&gt;Early Termination in Cognitive Systems&lt;/h2&gt;
+&lt;h2 id="1-termination-is-not-failure"&gt;1. Termination Is Not Failure&lt;/h2&gt;
+&lt;p&gt;Termination is a necessary function of cognition.
+Early termination, however, is a &lt;strong&gt;regulatory pattern,&lt;/strong&gt; not an error signal.&lt;/p&gt;
+&lt;p&gt;Cognitive systems frequently terminate inference before exploration is complete, not because reasoning failed, but because control conditions were met.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="2-what-early-termination-is"&gt;2. What Early Termination Is&lt;/h2&gt;
+&lt;p&gt;Early termination occurs when:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;inference stops before alternative paths are explored&lt;/li&gt;
+&lt;li&gt;evaluation concludes with partial signal integration&lt;/li&gt;
+&lt;li&gt;closure thresholds are met prematurely&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The system does not detect this as premature.
+From the control layer’s perspective, termination is correct.&lt;/p&gt;</description></item><item><title>Closure as a Control Function</title><link>https://cfim360.com/articles/cc/series-1/cc-009/</link><pubDate>Wed, 18 Feb 2026 00:00:00 +0530</pubDate><guid>https://cfim360.com/articles/cc/series-1/cc-009/</guid><description>&lt;div class="doc-cover"&gt;
 &lt;img
  src="https://cfim360.com/articles/cc/Series 1/covers/Article 9.webp"
  alt="Article 9 cover image"
